@@ -15,9 +15,9 @@ public class TurnProcess {
 
     /**
      * 获取变化的状态
-     * @param itemTop
-     * @param turnLine
-     * @param itemHeight
+     * @param itemTop item到顶部的高度差
+     * @param turnLine 动画转变线
+     * @param itemHeight item的高度
      * @return
      */
     public static int getState(float itemTop, float turnLine, float itemHeight) {

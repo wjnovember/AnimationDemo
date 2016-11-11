@@ -25,9 +25,19 @@ public class SolidAnimListActivity extends AppCompatActivity {
     }
 
     /**
+     * 初始化适配器
+     */
+    private void initAdapter() {
+        mAdapter = new SolidAnimListAdapter(this);
+    }
+
+    /**
      * 初始化recyclerview
      */
     private void initRecyclerView() {
+        // 初始化适配器
+        initAdapter();
+
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);

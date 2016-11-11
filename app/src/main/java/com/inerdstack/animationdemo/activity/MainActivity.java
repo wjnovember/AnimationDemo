@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mBtnScroller;
 
+    private Button mBtnSolid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnTimer = (Button) findViewById(R.id.btn_timer);
         mBtnScroller = (Button) findViewById(R.id.btn_scroll);
+        mBtnSolid = (Button) findViewById(R.id.btn_solid_anim);
 
         mBtnScroller.setOnClickListener(this);
         mBtnTimer.setOnClickListener(this);
+        mBtnSolid.setOnClickListener(this);
     }
 
 
@@ -35,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_scroll:
                 startActivity(new Intent(MainActivity.this, ScrollActivity.class));
+                break;
+            case R.id.btn_solid_anim:
+                startActivity(new Intent(MainActivity.this, SolidAnimListActivity.class));
                 break;
         }
     }
