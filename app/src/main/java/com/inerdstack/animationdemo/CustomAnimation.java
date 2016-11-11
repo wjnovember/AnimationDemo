@@ -140,7 +140,7 @@ public class CustomAnimation {
         if (enableMargin && mMarginViewId != NO_VIEW) {
             View view = viewGroup.findViewById(mMarginViewId);
             RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) view.getLayoutParams();
-            
+
         }
     }
 
