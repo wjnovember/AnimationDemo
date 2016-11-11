@@ -1,4 +1,4 @@
-package com.inerdstack.animationdemo;
+package com.inerdstack.animationdemo.anim;
 
 /**
  * Created by wangjie on 2016/11/10.
