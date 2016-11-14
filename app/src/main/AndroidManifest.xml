@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".activity.TimerActivity" />
         <activity android:name=".activity.ScrollActivity" />
-        <activity android:name=".activity.SolidAnimListActivity"></activity>
+        <activity android:name=".activity.SolidAnimListActivity" />
+        <activity android:name=".activity.DynamicAnimListActivity"></activity>
     </application>
 
 </manifest>

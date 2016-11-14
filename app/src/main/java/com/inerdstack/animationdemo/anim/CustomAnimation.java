@@ -105,6 +105,12 @@ public class CustomAnimation {
             return;
         }
 
+        // 减少动画的有效帧数，关键帧不可丢失
+        if (process != 0 && process != 25 && process != 26 && process != 50 && process != 51 &&
+                process != 75 && process != 76 && process != 100 && process % 2 == 0) {
+            return;
+        }
+
         mProcess = process;
 
         /**

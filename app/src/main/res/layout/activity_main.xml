@@ -25,4 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="固定位置动画列表"/>
+
+    <Button
+        android:id="@+id/btn_dynamic_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态位置动画列表"/>
 </LinearLayout>
