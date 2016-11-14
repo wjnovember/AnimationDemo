@@ -29,7 +29,7 @@ public class SolidAnimListAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.anim_list_item, parent, false);
-        return new ViewHolder(view, 0);
+        return new ViewHolder(view);
     }
 
     @Override
