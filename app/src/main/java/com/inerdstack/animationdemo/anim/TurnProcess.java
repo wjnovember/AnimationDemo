@@ -1,5 +1,7 @@
 package com.inerdstack.animationdemo.anim;
 
+import android.util.Log;
+
 /**
  * Created by wangjie on 2016/11/10.
  */
@@ -38,7 +40,9 @@ public class TurnProcess {
      * @return
      */
     public static int getProcess(float itemTop, float turnLine, float itemHeight) {
+        Log.i("anmm", "getProcess--itemTop:" + itemTop + ";turnline:" + turnLine + ";itemHeight:" + itemHeight);
         if (itemTop < turnLine || itemTop > (turnLine + 2 * itemHeight)) {
+            Log.i("anmm", "invalid 0");
             return 0;
         } else {
             float percent = (itemTop - turnLine) / (2 * itemHeight);
