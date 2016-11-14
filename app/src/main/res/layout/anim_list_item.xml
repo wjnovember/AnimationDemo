@@ -6,7 +6,7 @@
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="160dp">
 
     <RelativeLayout
         android:id="@+id/container"
